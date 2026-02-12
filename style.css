@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.projeto {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.projeto img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.projeto h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.projeto p {
+  margin-top: 0.5rem;
+}
+
+.tecnologia {
+  display: inline-block;
+  text-align: center;
+  margin: 1rem;
+}
+
+.tecnologia img {
+  width: 50px;
+  height: 50px;
+}
+
+#contato a {
+  color: #333;
+  text-decoration: none;
+}
+
+#contato a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+
+
+
+
+.tecnologias-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre os ícones */
+  margin-top: 10px;
+}
+
+.tecnologias-container i {
+  font-size: 1.5rem;
+}
+
+/* Cores específicas para cada tecnologia */
+.html-icon { color: #e34f26; } /* HTML5 */
+.css-icon { color: #1572b6; } /* CSS3 */
+.js-icon { color: #f7df1e; } /* JavaScript */
+.sql-icon { color: #00758f; } /* SQL */
+.vue-icon { color: #42b883; } /* Vue.js */
+
+
+#contato i {
+  margin-right: 6px;
+  color: #0073b1; /* Azul do LinkedIn */
+  font-size: 24px;
+}
+
+
+/* Carrossel */
+.carrossel-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-imagem {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;  /* Arredonda os botões */
+  width: 50px;  /* Largura dos botões */
+  height: 50px;  /* Altura dos botões */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrossel-btn.prev {
+  left: 10px;
+}
+
+.carrossel-btn.next {
+  right: 10px;
+}
+
+.carrossel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
